@@ -1,0 +1,22 @@
+{
+  "green": [
+    "openai.com",
+    "github.com",
+    "nodejs.org",
+    "developer.mozilla.org",
+    "wikipedia.org",
+    "npmjs.com"
+  ],
+  "gray": [
+    "reddit.com",
+    "medium.com",
+    "substack.com",
+    "quora.com"
+  ],
+  "red": [
+    "example-malware.com",
+    "example-phishing.com",
+    "malware.test",
+    "phishing.test"
+  ]
+}

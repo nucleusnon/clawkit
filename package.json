@@ -1,0 +1,43 @@
+{
+  "name": "create-clawkit",
+  "version": "0.1.0",
+  "description": "ClawKit CLI - a Next.js-like framework for AI agents",
+  "type": "module",
+  "bin": {
+    "create-clawkit": "dist/cli.js",
+    "clawkit": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node ./scripts/copy-graylist.mjs",
+    "clean": "rimraf dist",
+    "dev": "tsx src/cli.ts",
+    "smoke": "node dist/cli.js --help"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "cli",
+    "framework",
+    "clawkit"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "commander": "^13.1.0",
+    "esbuild": "^0.25.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.13.10",
+    "rimraf": "^6.0.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}

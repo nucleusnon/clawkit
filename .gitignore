@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.clawkit-cache/
+logs/
+memory/
+*.db
+.DS_Store
